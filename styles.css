@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Home page */
+
+.home{
+    background: linear-gradient(#a4f3f5,#c6f7f8,#fff);
 }
 
 .navBar{
@@ -41,24 +48,142 @@ a{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* background-image: url(https://imgur.com/G3KBtxQ.png);
-    background-size: cover; */
 }
 
 .col{
     flex-basis: 50%;
     min-width: 300px;
+    padding-left: 10%;
+    text-align: right;
 }
 
-.col img{
+.col h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col button{
+    margin:25px 0;
+    display:inline-block;
+    padding:8px 30px;
+    border-radius: 30px;
+    border-color: #0c0f63;
+    background-color: #0c0f63;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.col button:hover{
+    background-color: #fff;
+    color: #0c0f63;
+}
+
+.hpimgMain{
+    flex-basis: 50%;
+    min-width: 300px;
     max-width: 100%;
     float: right;
-    padding-right: 100px;
-    transform: rotate(-10deg);
+    transform: rotate(10deg);
 }
 
-.row h1{
+
+/* Features */
+
+/* .banner{
+    color: #0c0f63;
+    border: solid #0c0f63;
+    width:75%;
+
+} */
+
+
+.line{
+    color:#000;
+    border: solid #000;
+    border-radius: 5px;
+    width:25%;
+}
+
+.row h2{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.infoBox{
+    max-width: 20%;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 50px;
+     
+    display:flex;
+    flex-direction: column;
+}
+
+.infoBox:hover{
+    background-color: #c6f7f8;
+    transform: scale(1.1,1.1);
+}
+
+i{
+    color:black; 
+    clear: both;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.info{
+    padding:10px 20px;
+    font-size: 15px;
     
-    text-align: right;
+}
+
+
+
+/* Color display */
+
+
+#diffcolors{
+    transform: rotateY(180deg);
+}
+
+.hpcolors button{
+    border:solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 30px;
+    padding:10px;
+    margin:10px;
+}
+
+.hpcolors button:hover{
+    border:solid #000;
+    cursor: pointer;
+}
+.c2button i{
+    color: #50aa78;
+}
+
+.c3button i{
+    color: #0f3158;
+}
+
+.c4button i{
+    color: #953019;
+}
+
+.c5button i{
+    color:#c300af;
+}
+
+.c6button i{
+    color:#46aa98;
+}
+
+.c7button i{
+    color:#4c0a50;
+}
+
+.c8button i{
+    color:#443658;
 }
 
