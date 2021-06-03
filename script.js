@@ -8,24 +8,44 @@ window.addEventListener("scroll", function()
 })
 
 // toggle menubar
-var MenuItems = document.getElementById('menu-items');
+// var MenuItems = document.getElementById('menu-items');
 
-MenuItems.style.maxHeight = "0px";
+// MenuItems.style.maxHeight = "0px";
+
+// function menutoggle()
+// {
+//     if(MenuItems.style.maxHeight == "0px")
+//     {
+//         MenuItems.style.maxHeight = "200px";
+//     }
+//     else{
+//         MenuItems.style.maxHeight = "0px";
+//     }
+// }
+
+var i=0;
 
 function menutoggle()
 {
-    if(MenuItems.style.maxHeight == "0px")
-    {
-        MenuItems.style.maxHeight = "200px";
-    }
-    else{
-        MenuItems.style.maxHeight = "0px";
-    }
+    i++;
+    if(i%2!=0)
+        this.document.getElementById("menu-items").className = "show";
+    else
+        this.document.getElementById("menu-items").className = "normal";
 }
 
 
 
 
+
+
+
+
+
+
+
+
+// to change imgs according to the colors
 
 function showBlack()
 {
@@ -66,6 +86,8 @@ function showc8()
 {
     document.getElementById('diffcolors').src="https://imgur.com/NhNLYpm.png";
 }
+
+
 
 
 
