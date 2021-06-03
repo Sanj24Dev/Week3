@@ -38,3 +38,37 @@ function showc8()
     document.getElementById('diffcolors').src="https://imgur.com/NhNLYpm.png";
 }
 
+
+// sticky navbar on scrolling
+window.addEventListener("scroll", function()
+{
+    if(window.scrollY > 10)
+    this.document.getElementById("change").className = "sticky";
+    else
+    this.document.getElementById("change").className = "navbar";
+})
+
+// toggle menubar
+var MenuItems = document.getElementById('menu-items');
+
+MenuItems.style.maxHeight = "0px";
+
+function menutoggle()
+{
+    if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "200px";
+    }
+    else{
+        MenuItems.style.maxHeight = "0px";
+    }
+}
+
+
+
+
+
+
+
+
+
