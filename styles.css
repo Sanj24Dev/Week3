@@ -438,7 +438,7 @@ th, tr{
         position: absolute;
         top: 70px;
         left: 0;
-        background:cadetblue;
+        background:rgb(62, 62, 62);
         width:100%;
         overflow: hidden;
         transition: max-height 0.5s;
