@@ -228,7 +228,7 @@ i{
     font-size: 30px;
 }
 
-.col{
+.col-2{
     display: flex;
     flex-direction: column;
     max-width: 40%;
@@ -468,9 +468,9 @@ th{
 
 
 @media only screen and (max-width : 900px){
-   body{
-       margin: 0;         
-    }
+   /* body{
+       margin: ;         
+    } */
    
     .col-1 img{
         margin-top: -100px;
@@ -489,15 +489,17 @@ th{
 }
 
 @media only screen and (max-width : 750px){
-    body{
+    /* body{
         margin: auto;
-    }
+    } */
     
     /*     
     #home{
         padding:0 65%;
     } */
     
+
+
     .col-1{
         width:fit-content;
         padding-top:50px;
@@ -507,7 +509,6 @@ th{
     } 
 
     .col-1 h1{
-
         padding-left: 30px;
     }
     .col-1 img{
@@ -519,15 +520,41 @@ th{
         font-size: 10px;
     }
 
+   .heading{
+       font-size: 20px;
+   }
+
+   .add img{
+       height: 150px;
+   }
    
+   #spec h2{
+       padding:30px;
+   }
+
+   .contactBox{
+       font-size: 15px;
+   }
+
+   .hpcolors button{
+       margin: 0;
+   }
 }
 
 @media only screen and (max-width : 600px){
-    body{
+    /* body{
         margin:auto;
     }
-    
-    
+     */
+    .col-1{
+        width:100%;
+        text-align: center;
+    }
+
+    .col-1 button{
+        margin:10px 0;
+    }
+
     .infoBox{
         max-width: 40%;
         padding-bottom: 10px;
@@ -537,4 +564,24 @@ th{
         font-size: 20px;
         padding:5px;
     }
+
+    .hpimgs img{
+        height: 300px;
+    }
+
+    .instruction{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width : 450px)
+{
+    #features .row{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width : 300px)
+{
+
 }
