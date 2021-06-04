@@ -2,26 +2,18 @@
 window.addEventListener("scroll", function()
 {
     if(window.scrollY > 10)
-    this.document.getElementById("change").className = "sticky";
+    {
+        this.document.getElementById("change").className = "sticky";
+        document.getElementById('logo').src="https://imgur.com/fVn6V66.png";
+    }
     else
-    this.document.getElementById("change").className = "navbar";
+    {
+        this.document.getElementById("change").className = "navbar";
+        document.getElementById('logo').src="https://imgur.com/nGjYsxB.png";
+    }
+    
 })
 
-// toggle menubar
-// var MenuItems = document.getElementById('menu-items');
-
-// MenuItems.style.maxHeight = "0px";
-
-// function menutoggle()
-// {
-//     if(MenuItems.style.maxHeight == "0px")
-//     {
-//         MenuItems.style.maxHeight = "200px";
-//     }
-//     else{
-//         MenuItems.style.maxHeight = "0px";
-//     }
-// }
 
 var i=0;
 
@@ -33,15 +25,6 @@ function menutoggle()
     else
         this.document.getElementById("menu-items").className = "normal";
 }
-
-
-
-
-
-
-
-
-
 
 
 
