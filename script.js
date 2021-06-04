@@ -89,13 +89,3 @@ function showc8()
 
 
 
-
-
-
-
-
-
-
-
-
-
