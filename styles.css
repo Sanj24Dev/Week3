@@ -73,6 +73,7 @@ a{
 
 .navbar a:hover{
     background-color: #fff;
+    color:#0c0f63;
 }
 
 .sticky {
@@ -97,7 +98,9 @@ a{
 
 .sticky a:hover{
     background-color: #fff;
+    border-radius: 15px;
 }
+
 
 .sticky .logo{
     padding-top: 15px;
@@ -131,6 +134,7 @@ a{
 .col-1 img{
     height:700px;
     transform: rotate(10deg);
+    
 }
 
 .col-1 a{
@@ -151,7 +155,6 @@ a{
     border-color: #0c0f63;
     background-color: #0c0f63;
     color: #fff;
-    
 }
 
 .col-1 button:hover{
@@ -159,6 +162,16 @@ a{
     color: #0c0f63;
 }
 
+.explore{
+    display: none;
+    padding:5px;
+    border-radius: 15px;
+    border-color: #0c0f63;
+    background-color: #0c0f63;
+    color: #fff;
+    
+    
+}
 
 
 /* Features */
@@ -166,6 +179,7 @@ a{
 #features{
     margin: auto;
     margin-bottom: 50px;
+    
 }
 .line{
     color:#000;
@@ -572,6 +586,13 @@ th, tr{
 
 @media only screen and (max-width : 450px)
 {
+    .col-1 button{
+        display: none;
+    }
+
+    .explore{
+        display: block;
+    }
     #features .row{
         flex-direction: column;
     }
