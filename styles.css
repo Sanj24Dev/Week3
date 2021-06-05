@@ -10,13 +10,12 @@ html {
 }
 
 
-
-
 body{
     margin : 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 } 
+
 /* Home page */
 
 #home{
@@ -25,6 +24,7 @@ body{
     background-position:center;
     margin: auto;
 }
+
 
 /* navbar settings */
 .navbar{
@@ -109,6 +109,8 @@ a{
     padding-top: 15px;
 }
 
+
+
 /* intro page settings */
 .firstPage{
     display: block;
@@ -156,7 +158,6 @@ a{
     border-color: #0c0f63;
     background-color: #0c0f63;
     color: #fff;
-    /* transition: background 0.5s; */
 }
 
 .col-1 button:hover{
@@ -165,13 +166,15 @@ a{
 }
 
 
-/* Features */
 
+
+/* Features */
 
 #features{
     margin: auto;
     margin-bottom: 50px;
 }
+
 .line{
     color:#000;
     border: solid #000;
@@ -196,7 +199,6 @@ a{
     text-align: center;
     padding-top: 5px;
     font-size: 50px;
-     
     display:flex;
     flex-direction: column;
 }
@@ -215,8 +217,8 @@ i{
 .info{
     padding:10px 20px;
     font-size: 15px;
-    
 }
+
 
 
 /* Color display */
@@ -301,6 +303,8 @@ i{
     color:#443658;
 }
 
+
+
 /* Add-ons */
 
 .add-on{
@@ -326,11 +330,11 @@ i{
     width: 100%;
 }
 
-
 .add p{
     text-align: center;
     padding: 5px 0;
 }
+
 .add:hover{
     transform: translateY(-10px);
 }
@@ -369,17 +373,10 @@ th, tr{
    padding: 15px;
 }
 
-
-
 .blueBox{
     background: #272525;
     color: #fff;
-    
 }
-
-
-
-
 
 #spec h2{
     background: #0c0f63;
@@ -387,6 +384,7 @@ th, tr{
     padding:50px;
     border-radius: 20px;
 }
+
 
 /* contact */
 
@@ -431,6 +429,9 @@ th, tr{
 .media i:hover{
     transform: translateY(-5px);
 }
+
+
+
 /* Responsiveness */
 .menu{
     width: 28px;
@@ -439,7 +440,6 @@ th, tr{
     display:none;
     cursor: pointer;
 }
-
 
 .show{
     display: block;
@@ -510,17 +510,6 @@ th, tr{
 }
 
 @media only screen and (max-width : 750px){
-    /* body{
-        margin: auto;
-    } */
-    
-    /*     
-    #home{
-        padding:0 65%;
-    } */
-    
-
-
     .col-1{
         width:fit-content;
         padding-top:50px;
@@ -535,8 +524,7 @@ th, tr{
     .col-1 img{
         height: 350px;
     }
-
-    /* need to fix the width of the section  */
+    
     .col-1 a{
         font-size: 10px;
     }
@@ -563,10 +551,6 @@ th, tr{
 }
 
 @media only screen and (max-width : 600px){
-    /* body{
-        margin:auto;
-    }
-     */
     .col-1{
         width:100%;
         text-align: center;
@@ -629,10 +613,7 @@ th, tr{
         padding:10px;
         font-size: 30px;
     }
-    /* .hpimgs img{
-        height:200px;
-    } */
-
+    
     .add{
         padding:0 5px;
     }
