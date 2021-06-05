@@ -515,7 +515,7 @@ th, tr{
         height: 350px;
     }
 
-    /* need to fix the width of the section  */
+   
     .col-1 a{
         font-size: 10px;
     }
@@ -603,9 +603,9 @@ th, tr{
     .hpcolors{
         padding-top: 10px;
     }
-    .hpimgs img{
+/*     .hpimgs img{
         height:200px;
-    }
+    } */
 
     .add{
         padding:0 5px;
