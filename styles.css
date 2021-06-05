@@ -1,3 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+}
+
+
+
+
 body{
     margin : 0;
     padding: 0;
@@ -63,8 +77,9 @@ a{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:rgb(62, 62, 62); 
-    opacity:75%;
+    
+    background-color:#a4f3f5; 
+    /* opacity:75%; */
     text-decoration: none;
     left: 0;
     display: flex;
@@ -425,10 +440,16 @@ th, tr{
     cursor: pointer;
 }
 
+
 .show{
     display: block;
 }
 
+.copyright{
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
 
 @media only screen and (max-width : 1000px){    
     #home{
@@ -436,7 +457,7 @@ th, tr{
     }
     nav ul{
         position: absolute;
-        top: 70px;
+        top: 80px;
         left: 0;
         background:rgb(62, 62, 62);
         width:100%;
@@ -450,10 +471,10 @@ th, tr{
         margin-right: 50px;
         margin-top: 10px;
         margin-bottom: 10px;
+        color: #fff;
     }
 
     nav ul li a{
-        color:black;
         background-color: cadetblue;
     }
 
@@ -515,7 +536,7 @@ th, tr{
         height: 350px;
     }
 
-   
+    /* need to fix the width of the section  */
     .col-1 a{
         font-size: 10px;
     }
@@ -603,7 +624,12 @@ th, tr{
     .hpcolors{
         padding-top: 10px;
     }
-/*     .hpimgs img{
+
+    .hpcolors button{
+        padding:10px;
+        font-size: 30px;
+    }
+    /* .hpimgs img{
         height:200px;
     } */
 
