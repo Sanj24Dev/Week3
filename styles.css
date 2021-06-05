@@ -94,12 +94,11 @@ a{
 .sticky a{
     padding: 14px 14px;
     border-radius: 15px;
-    
+    text-align:center;
 }
 
 .sticky a:hover{
-    background-color: #000;
-
+    background-color: #0c0f63;
     border-radius: 15px;
 }
 
