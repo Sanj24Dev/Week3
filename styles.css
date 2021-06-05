@@ -97,13 +97,11 @@ a{
 }
 
 .sticky a:hover{
-    background-color: #0c0f63;
+    background-color: #fff;
     border-radius: 15px;
 }
 
-.sticky li:hover{
-    color: #fff;
-}
+
 .sticky .logo{
     padding-top: 15px;
 }
