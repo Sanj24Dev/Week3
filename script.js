@@ -2,30 +2,29 @@
 window.addEventListener("scroll", function()
 {
     if(window.scrollY > 10)
-    {
         this.document.getElementById("change").className = "sticky";
-        document.getElementById('logo').src="https://imgur.com/fVn6V66.png";
-    }
     else
-    {
-        this.document.getElementById("change").className = "navbar";
-        document.getElementById('logo').src="https://imgur.com/nGjYsxB.png";
-    }
-    
+        this.document.getElementById("change").className = "navbar";    
 })
 
 
+//toggling the menu
 var i=0;
-
 function menutoggle()
 {
     i++;
     if(i%2!=0)
+    {
         this.document.getElementById("menu-items").className = "show";
+        this.document.getElementById("menu-icon").className = "fa fa-times";
+    }
     else
+    {
         this.document.getElementById("menu-items").className = "normal";
+        this.document.getElementById("menu-icon").className = "fa fa-bars";
+    }
+       
 }
-
 
 
 // to change imgs according to the colors
