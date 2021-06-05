@@ -77,9 +77,7 @@ a{
     position: fixed;
     top: 0;
     width: 100%;
-    
-    background-color:#a4f3f5; 
-    /* opacity:75%; */
+    background-color:#a4f3f5;
     text-decoration: none;
     left: 0;
     display: flex;
@@ -91,7 +89,7 @@ a{
 }
 
 .sticky li{
-    color: #fff;
+    color: #000;
 }
 .sticky a{
     padding: 14px 14px;
