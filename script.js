@@ -42,9 +42,9 @@ function changingColor()
         var a;
         var result = text.fontcolor("green");
         document.getElementById("colorChange").innerHTML = result;
-        // for(a=0;a<5000;a++);
-        //var result = text.fontcolor("blue");
-        //document.getElementById("colorChange").innerHTML = result;
+        for(a=0;a<5000;a++);
+        var result = text.fontcolor("blue");
+        document.getElementById("colorChange").innerHTML = result;
     //}
     
 
