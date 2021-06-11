@@ -5,8 +5,8 @@ html {
 :target:before {
     content: "";
     display: block;
-    height: 100px;
-    margin: -100px 0 0;
+    height: 75px;
+    margin: -75px 0 0;
 }
 
 
@@ -32,17 +32,20 @@ body{
 
 .navbar{
     position: fixed;
-    top: 0;
+    top: 15px;
     left: 0;
     width:100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     
     transition: 0.6s;
     z-index: 100000;
 }
 
+.logo{
+    padding-left: 80px;
+}
 nav{
     flex: 1;
     text-align: right;
@@ -62,13 +65,12 @@ nav ul li{
     position: relative;
 }
 
-a{
-    text-decoration: none;
-}
-
 .navbar a{
     padding: 14px 14px;
     border-radius: 15px;
+    align-self: center;
+    text-decoration: none;
+    color: #000;
 }
 
 .navbar a:hover{
@@ -94,6 +96,8 @@ a{
 .sticky a{
     padding: 14px 14px;
     border-radius: 15px;
+    text-decoration: none;
+    color: black;
 }
 
 .sticky a:hover{
@@ -106,6 +110,10 @@ a{
     padding-top: 15px;
 }
 
+.normal{
+    padding-right: 80px;
+}
+
 
 /* intro page settings */
 
@@ -115,16 +123,15 @@ a{
     text-align: center;
 }
 
-.col-1 {
+.col-1{
     float: left;
     width: 50%;
 }
 
-.intro{
-   text-align: right;
-   padding-top: 170px;
-   margin: auto;
-   
+.intro {
+    text-align: right;
+    padding-top: 170px;
+    margin: auto;
 }
 
 .intro h1{
@@ -134,7 +141,7 @@ a{
 .col-1 img{
     height:700px;
     transform: rotate(10deg);
-    
+    float: left;
 }
 
 .col-1 a{
@@ -148,7 +155,7 @@ a{
 }
 
 .col-1 button{
-    margin:25px 0;
+    margin:25px 125px;
     display:inline-block;
     padding:8px 30px;
     border-radius: 30px;
@@ -162,6 +169,9 @@ a{
     color: #0c0f63;
 }
 
+.col-1 button::after{
+    margin-bottom: 100px;
+}
 .explore{
     display: none;
     padding:5px;
@@ -241,11 +251,9 @@ i{
 .heading{
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    background-color: #0c0f63;
     border-radius: 30px;
-    font-size: 30px;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .col-2{
@@ -277,7 +285,7 @@ i{
     margin:10px;
 }
 
-.hpcolors button:hover{
+.c1button:hover{
     border:solid #000;
     cursor: pointer;
 }
@@ -285,30 +293,63 @@ i{
     color: #50aa78;
 }
 
+.c2button:hover{
+    border:solid #50aa78;
+    cursor: pointer;
+}
+
 .c3button i{
     color: #0f3158;
+}
+
+.c3button:hover{
+    border:solid #0f3158;
+    cursor: pointer;
 }
 
 .c4button i{
     color: #953019;
 }
 
+.c4button:hover{
+    border:solid #953019;
+    cursor: pointer;
+}
+
 .c5button i{
     color:#c300af;
 }
 
+.c5button:hover{
+    border:solid #c300af;
+    cursor: pointer;
+}
 .c6button i{
     color:#46aa98;
+}
+
+.c6button:hover{
+    border:solid #46aa98;
+    cursor: pointer;
 }
 
 .c7button i{
     color:#4c0a50;
 }
 
+.c7button:hover{
+    border:solid #4c0a50;
+    cursor: pointer;
+}
+
 .c8button i{
     color:#443658;
 }
 
+.c8button:hover{
+    border:solid #443658;
+    cursor: pointer;
+}
 
 /* Add-ons */
 
@@ -345,15 +386,17 @@ i{
 }
 
 
+
+
 /* Specifications */
 
 #spec{
     margin: auto;
 }
 
-#spec .row{
+/* #spec .row{
     flex-direction: row-reverse;
-}
+} */
 
 .details{
     display: flex;
@@ -366,7 +409,8 @@ i{
 }
 
 table{
-    margin:20px;
+    width:60%;
+    align-self: center; 
 }
 
 table, th, tr {
@@ -378,18 +422,22 @@ th, tr{
    padding: 15px;
 }
 
-.blueBox{
+th{
+    width:50%;
+}
+
+.blackBox{
     background: #272525;
     color: #fff;
     
 }
 
-#spec h2{
+/* #spec h2{
     background: #0c0f63;
     color: #fff;
     padding:50px;
     border-radius: 20px;
-}
+} */
 
 
 /* contact */
@@ -432,6 +480,9 @@ th, tr{
     transition: transform 0.5s;
 }
 
+.media a{
+    text-decoration: none;
+}
 .media i:hover{
     transform: translateY(-5px);
 }
@@ -479,11 +530,10 @@ th, tr{
         margin-top: 10px;
         margin-bottom: 10px;
         color: #fff;
+        padding-bottom: 15px;
     }
 
-    nav ul li a{
-        background-color: cadetblue;
-    }
+    
 
     .menu{
         display: block;
@@ -586,13 +636,13 @@ th, tr{
 
 @media only screen and (max-width : 450px)
 {
-    .col-1 button{
+    /* .col-1 button{
         display: none;
     }
 
     .explore{
         display: block;
-    }
+    } */
     #features .row{
         flex-direction: column;
     }
@@ -636,10 +686,10 @@ th, tr{
         margin-bottom: 0;
     }
 
-    #spec h2{
+    /* #spec h2{
         text-align: center;
         line-height: 30px;
-    }
+    } */
 
     .media i{
         font-size: 25px;
@@ -676,9 +726,9 @@ th, tr{
         height: 60px;
     }
 
-    #spec h2{
+    /* #spec h2{
         font-size: 20px;
-    }
+    } */
 
     th{
         font-size: 12px;
