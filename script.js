@@ -8,8 +8,9 @@ window.addEventListener("scroll", function()
 })
 
 
-//toggling the menu
+
 var i=0;
+
 function menutoggle()
 {
     i++;
@@ -27,9 +28,34 @@ function menutoggle()
 }
 
 
+function onButtonClick() {
+    document.getElementById("features").scrollIntoView();
+  }
+
+
+
+function changingColor()
+{
+    var text =  "CLICK ";
+    while(1)
+    {
+        var a;
+        var result = text.fontcolor("green");
+        document.getElementById("colorChange").innerHTML = result;
+        // for(a=0;a<5000;a++);
+        var result = text.fontcolor("blue");
+        document.getElementById("colorChange").innerHTML = result;
+    }
+    
+
+}
+
+
+
+
 // to change imgs according to the colors
 
-function showBlack()
+function showc1()
 {
     document.getElementById('diffcolors').src="https://imgur.com/hg9SG3g.png";
 }
