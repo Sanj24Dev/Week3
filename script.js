@@ -36,9 +36,10 @@ function onButtonClick() {
 
 function changingColor()
 {
-    var text =  "CLICK ";
+    
    // while(1)
    // {
+        var text =  "CLICK ";
         var a;
         var result = text.fontcolor("green");
         document.getElementById("colorChange").innerHTML = result;
