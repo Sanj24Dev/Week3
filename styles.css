@@ -561,7 +561,7 @@ th{
 
 .menu{
     width: 28px;
-    padding-right: 30px;
+    padding-right: 80px;
     font-size: 30px;
     display:none;
     cursor: pointer;
@@ -605,6 +605,7 @@ th{
 
     .menu{
         display: block;
+        
     }
 
     .intro{
@@ -637,41 +638,27 @@ th{
         padding-top:50px;
         text-align: center;
     } 
+
     .col-1 .intro{
         text-align: left;
-        
+        font-size: 50px;
     } 
-
-    .col-1 h1{
-        padding-left: 30px;
-    }
-    .col-1 img{
-        height: 350px;
-    }
 
     .col-1 a{
         font-size: 10px;
     }
 
-   .heading{
-       font-size: 20px;
+   .info{
+       font-size: 15px;
    }
-
    .add img{
        height: 150px;
    }
-   
-   #spec h2{
-       padding:30px;
-   }
-
-   .contactBox{
-       font-size: 15px;
-   }
 
    .hpcolors button{
-       margin: 0;
-   }
+    font-size: 25px;
+    padding:5px;
+}
 }
 
 @media only screen and (max-width : 600px){
@@ -685,6 +672,10 @@ th{
         margin:10px 0;
     }
 
+    .heading{
+        font-size: 30px;
+    }
+    
     .infoBox{
         max-width: 40%;
         padding-bottom: 10px;
