@@ -10,20 +10,22 @@
     <script src="script.js"></script>
     
 </head>
-<body>
+<body onload="changingColor()">
     <div id="home">
         
             <div id="change" class="navbar">
                 <div class="logo">
-                    <img id="logo" src="https://imgur.com/nGjYsxB.png" alt="logo" width="125px">
+                    <img id="logo" src="https://imgur.com/LVdwEdt.png" alt="logo" width="75px">
                 </div>
                 <nav>
                     <ul id="menu-items" class="normal">
-                        <a href="#home"><li>HOME</li></a>
-                        <a href="#features"><li>FEATURES</li></a>
-                        <a href="#colors"><li>PRODUCTS</li></a>
-                        <a href="#spec"><li>PRODUCT DETAILS</li></a>
-                        <a href="#contact"><li>CONTACT</li></a>
+                        <li><a href="#home"><b>HOME</b></a></li>
+                        <li><a href="#features"><b>FEATURES</b></a></li>
+                        <li><a href="#colors"><b>PRODUCTS</b></a></li>
+                        <li><a href="#spec"><b>PRODUCT DETAILS</b></a></li>
+                        <li><a href="#contact"><b>CONTACT</b></a></li>
+                        <li><a href="#"><b>SIGN UP</b></a></li>
+                        
                     </ul>
                 </nav>
                 <div class="menu" onclick="menutoggle()"><i id="menu-icon" class='fa fa-bars'></i></div>
@@ -32,8 +34,10 @@
             <div class="firstPage">
                 <div class="col-1 intro">
                     <h1>Listening  in style!</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus?</p> -->
                     <a href="#features"><button><b>EXPLORE NOW &#8594;</b></button></a>
-                    <div class="explore"><b>SCROLL DOWN TO EXPLORE</b></div>
+                    <!-- <button onclick="onButtonClick()"><b>EXPLORE NOW</b></button> -->
+                    <!-- <div class="explore"><b>SCROLL DOWN TO EXPLORE</b></div> -->
                 </div>
                 <div class="col-1">
                     <img src="https://imgur.com/hg9SG3g.png" alt="pic">
@@ -89,9 +93,9 @@
                     <img id="diffcolors" src="https://imgur.com/hg9SG3g.png" alt="">
                 </div>
                 <div class="col-2">
-                    <div class="instruction"><b>CLICK</b> on the colors to explore<br>the wide range of colors in our headphones</div>
+                    <div class="instruction"><b id="colorChange"></b> on the colors to explore<br>the wide range of colors in our headphones</div>
                     <div class="hpcolors">
-                        <button onclick="showBlack()"><i class='fa fa-circle'></i></button>
+                        <button class="c1button" onclick="showc1()"><i class='fa fa-circle'></i></button>
                         <button class="c2button" onclick="showc2()"><i class='fa fa-circle'></i></button>
                         <button class="c3button" onclick="showc3()"><i class='fa fa-circle'></i></button>
                         <button class="c4button" onclick="showc4()"><i class='fa fa-circle'></i></button>
@@ -107,7 +111,7 @@
     </div>
 
     <div class="add-on">
-            <div class="instruction">For all you funky ones out there<br>Headgear headphones comes with ADD-ONS</div>
+            <div class="instruction">For all you funky ones out there<br>Headgear headphones come with add-ons</div>
             <div class="row">
                 <div class="add">
                     <img src="https://imgur.com/knrmfUy.png" alt="">
@@ -122,71 +126,78 @@
                     <p>Dog ears</p>
                 </div>
             </div>
+            <!-- <div class=”image-slider-wrapper”>
+                <ul id=”image_slider”>
+                    <li><img src="https://imgur.com/knrmfUy.png"></li>
+                    <li><img src="https://imgur.com/sXF8MV7.png"></li>
+                    <li><img src="https://imgur.com/Q6OAQLb.png"></li>
+                </ul> 
+            </div> -->
     </div>
 
     
     <!-- spcifications -->
     <div id="spec">
-            <div class="row">
-                <h2>PRODUCT INFORMATION</h2>
+            <!-- <div class="row">
+                <h2>PRODUCT INFORMATION</h2> -->
                 <div class="details">
                     <div class="instruction"><b>TECHNICAL DETAILS</b></div>
                     <table>
                         <tr>
-                            <th class="blueBox">Brand</th>
-                            <th class="blueBox">Headgear</th>
+                            <th class="blackBox">Brand</th>
+                            <th class="blackBox">Headgear</th>
                         </tr>
                         <tr>
                             <th>Model</th>
                             <th>HG011</th>
                         </tr>
                         <tr>
-                            <th class="blueBox">Pricing</th>
-                            <th class="blueBox">1999 INR</th>
+                            <th class="blackBox">Pricing</th>
+                            <th class="blackBox">1999 INR</th>
                         </tr>
                         <tr>
                             <th>Batteries</th>
                             <th>1 Lithium ion battery(included)</th>
                         </tr>
                         <tr>
-                            <th class="blueBox">Charging time</th>
-                            <th class="blueBox">2 hours</th>
+                            <th class="blackBox">Charging time</th>
+                            <th class="blackBox">2 hours</th>
                         </tr>
                         <tr>
                             <th>Battery average life</th>
                             <th>20 hours</th>
                         </tr>
                         <tr>
-                            <th class="blueBox">Hardware Platform</th>
-                            <th class="blueBox">PC, Tablet, Smartphone</th>
+                            <th class="blackBox">Hardware Platform</th>
+                            <th class="blackBox">PC, Tablet, Smartphone</th>
                         </tr>
                         <tr>
                             <th>Headphones forme factor</th>
                             <th>On ear</th>
                         </tr>
                         <tr>
-                            <th class="blueBox">Microphone form factor</th>
-                            <th class="blueBox">Built-in</th>
+                            <th class="blackBox">Microphone form factor</th>
+                            <th class="blackBox">Built-in</th>
                         </tr>
                         <tr>
                             <th>Connector type</th>
                             <th>Wireless</th>
                         </tr>
                         <tr>
-                            <th class="blueBox">Material</th>
-                            <th class="blueBox">Faux leather</th>
+                            <th class="blackBox">Material</th>
+                            <th class="blackBox">Faux leather</th>
                         </tr>
                         <tr>
                             <th>Weight</th>
                             <th>500g</th>
                         </tr>
                         <tr>
-                            <th class="blueBox">Country of origin</th>
-                            <th class="blueBox">India</th>
+                            <th class="blackBox">Country of origin</th>
+                            <th class="blackBox">India</th>
                         </tr>
                     </table>
                 </div>
-            </div>
+            <!-- </div> -->
     </div>
 
     <!-- Contact -->
