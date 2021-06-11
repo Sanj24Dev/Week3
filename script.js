@@ -37,15 +37,15 @@ function onButtonClick() {
 function changingColor()
 {
     var text =  "CLICK ";
-    while(1)
-    {
+   // while(1)
+   // {
         var a;
         var result = text.fontcolor("green");
         document.getElementById("colorChange").innerHTML = result;
         // for(a=0;a<5000;a++);
-        var result = text.fontcolor("blue");
-        document.getElementById("colorChange").innerHTML = result;
-    }
+        //var result = text.fontcolor("blue");
+        //document.getElementById("colorChange").innerHTML = result;
+    //}
     
 
 }
