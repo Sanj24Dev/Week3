@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    /* box-sizing: border-box; */
 }
 
 :target:before {
@@ -14,6 +15,11 @@ body{
     margin : 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    width:100vmax;
+    /* min-width: 100%; */
+    /* height:100%; */
+    /* width:-webkit-fill-available; */ 
 } 
 
 
@@ -34,7 +40,7 @@ body{
     position: fixed;
     top: 15px;
     left: 0;
-    width:100%;
+    width:100vmax;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -81,7 +87,7 @@ nav ul li{
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vmax;
     background-color:lightblue; 
     text-decoration: none;
     left: 0;
@@ -147,7 +153,7 @@ nav ul li{
     
 }
 .col-1 img{
-    height:700px;
+    height:600px;
     transform: rotate(10deg);
     float: left;
 }
@@ -210,6 +216,7 @@ nav ul li{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;   
+    /* padding-top: 5%; */
 }
 
 .row h2{
@@ -578,6 +585,7 @@ th{
 }
 
 @media only screen and (max-width : 1000px){    
+    
     #home{
         padding: 0 5%;
     }
@@ -615,9 +623,10 @@ th{
 
 
 @media only screen and (max-width : 900px){
-      
+    
     .col-1 img{
-        margin-top: -100px;
+        /* margin-top: -100px; */
+        height:500px;
     }
 
     .hpimgs img{
@@ -633,14 +642,20 @@ th{
 }
 
 @media only screen and (max-width : 750px){
+    
+    .col-1 img{
+        display: block;
+        transform: none;
+        height: 800px;
+        /* margin: 0 50px; */
+    }
     .col-1{
-        width:100%;
+        width:100vw;
         padding-top:50px;
-        text-align: center;
     } 
 
-    .col-1 .intro{
-        text-align: left;
+    .intro{
+        text-align: center;
         font-size: 50px;
     } 
 
@@ -648,6 +663,7 @@ th{
         font-size: 10px;
     }
 
+    
    .info{
        font-size: 15px;
    }
@@ -662,10 +678,9 @@ th{
 }
 
 @media only screen and (max-width : 600px){
-   
+    
     .col-1{
         width:100%;
-        text-align: center;
     }
 
     .col-1 button{
@@ -681,6 +696,9 @@ th{
         padding-bottom: 10px;
     }
 
+    .info{
+        font-size: 20px;
+    }
     .hpcolors button{
         font-size: 20px;
         padding:5px;
@@ -691,12 +709,21 @@ th{
     }
 
     .instruction{
-        font-size: 15px;
+        font-size: 20px;
+    }
+
+    .add-on .instruction{
+        font-size: 20px;
+    }
+
+    .add p{
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width : 450px)
 {
+    
     /* .col-1 button{
         display: none;
     }
@@ -704,6 +731,17 @@ th{
     .explore{
         display: block;
     } */
+
+    .firstPage{
+        justify-content: space-evenly;
+    }
+    .intro h1{
+        font-size: 50px;
+    }
+
+    .col-1 button{
+        font-size: 20px;
+    }
     #features .row{
         flex-direction: column;
     }
@@ -712,11 +750,15 @@ th{
         width:50%;
     }
     .infoBox{
-        max-width: 80%;
+        max-width: 60%;
     }
 
+    .info{
+        font-size: 25px;
+    }
     .heading{
-        font-size: 15px;
+        font-size: 35px;
+        padding-bottom: 10px;
     }
 
     #colors .row{
@@ -737,16 +779,33 @@ th{
         font-size: 30px;
     }
   
+    .hpimgs img{
+        height: 400px;
+    }
+
+    .add-on .row{
+        flex-direction: column;
+    }
     .add{
         padding:0 5px;
     }
+
     .add img{
-        height: 75px;
+        width: 300px;
     }
     .instruction{
         margin-bottom: 0;
+        font-size: 25px;
+        line-height: 40px;
     }
 
+    .instruction b{
+        font-size: 35px;
+    }
+
+    .details .instruction{
+        padding-bottom: 10px;
+    }
     /* #spec h2{
         text-align: center;
         line-height: 30px;
@@ -759,39 +818,44 @@ th{
 
 @media only screen and (max-width : 300px)
 {
+    .intro h1{
+        font-size: 60px;
+    }
+
+    .intro p{
+        font-size: 30px;
+    }
+
     .col-1 img{
-        height: 300px;
+        height: 500px;
     }
 
     #features h2{
-        font-size: 20px;
+        font-size: 40px;
     }
 
     .info{
-        font-size: 15px;
-    }
-
-    .infoBox{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .heading{
         padding:20px 10px;
+        font-size: 40px;
     }
 
+    .instruction b{
+        font-size: 40px;
+    }
     .instruction{
         padding: 0 5px;
+        font-size: 30px;
     }
 
-    .add img{
-        height: 60px;
+    table{
+        width:80%;
     }
-
-    /* #spec h2{
-        font-size: 20px;
-    } */
 
     th{
-        font-size: 12px;
+        font-size: 20px;
     }
 }
